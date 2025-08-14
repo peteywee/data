@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Local data and caches
+.data/
+data/
+.cache/
+tmp/
+temp/
+
+# Environment variables (keep only example)
+.env
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs (keep project-specific settings if needed)
+.vscode/
+.idea/
+*.swp
+
+# Docker runtime files
+*.pid
+*.seed
+*.pid.lock
