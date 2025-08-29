@@ -1,25 +1,19 @@
-# data-gpt (Starter)
+# FastAPI Hierarchical Reasoning Assistant
 
-A modular GPT orchestrator with agent stubs, memory, connectors, evaluation harness, CI, and Docker.
+## Features
+- Summarizer (/execution/summarize)
+- Memory with SQLite persistence (/memory/save, /memory/recall)
+- Policy Checker (/validation/policycheck)
+- Clarification (/strategic/clarify)
+- Health check (/health)
+- Redirects / to Swagger UI (/docs)
+- Custom welcome route (/welcome)
 
-## Quickstart
+## Setup
 ```bash
-cd data-gpt
-cp .env.example .env
-npm i
-npm run dev -- --task "Draft a kickoff plan for Pets content hub"
+docker-compose up --build
 ```
 
-## Agents
-- ViabilityAnalyst, ExecutionDesigner, PMO, OperationsArchitect, CommunicationStrategist, ExecutionAuditor
-
-## Evaluate
-```bash
-npm test
-```
-
-## Build & Run
-```bash
-npm run build
-npm start
-```
+## Testing
+- Health check: curl http://localhost:8000/health
+- Swagger UI: http://localhost:8000/docs
